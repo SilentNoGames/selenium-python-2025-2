@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 
 @given('the user is on the login page')
 def step_given_user_on_login_page(context):
-    context.driver = webdriver.Chrome()  # o webdriver.Firefox()
+    context.driver = webdriver.Edge()  # o webdriver.Firefox()
     context.driver.get("https://www.saucedemo.com/v1/index.html")
     context.login_page = LoginPage(context.driver)
 
